@@ -3,7 +3,7 @@
      <input (click)="$event.stopPropagation();" [(ngModel)]="name" (ngModelChange)="changeName(name)"  >
   </span>
   <!-- Condition météo en image -->
-  <div class="weather-icon__container " [ngSwitch]="condition">
+<!--   <div class="weather-icon__container " [ngSwitch]="condition">
     <div *ngSwitchCase="'sun'">         
       <i class="fas fa-10x fa-sun"></i>
     </div>
@@ -20,6 +20,11 @@
       <i class="fas fa-10x fa-snowflake"></i>
     </div>
   </div>
+ -->
+  <app-image-teaser [condition] = "condition" [taille] = "'grande taille'">
+    
+  </app-image-teaser >
+
   <!-- Temperature Min Max sans le million de décimal -->
   <div class="temperature-text__container">
     <span class="temperature__text">{{ currentTemp | number: '':'fr-FR' }}</span>

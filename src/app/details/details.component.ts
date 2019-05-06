@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WeatherService, DailyForeCast } from '../weather.service';
 
+import { ImageTeaser } from '../image-teaser/image-teaser.component';
+
 @Component({
   selector: 'weather-details',
   templateUrl: './details.component.html',

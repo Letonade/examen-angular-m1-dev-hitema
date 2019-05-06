@@ -52,6 +52,9 @@
           <span class="day-name">{{day.name}} </span>
           <span class="day-temp">{{day.temp | number: '1.0-1':'fr-FR'}}°</span>
           <span class="day-condition">{{day.condition}} </span>
+            <app-image-teaser [condition] = "day.condition" [taille] = "'petite taille'">
+    
+            </app-image-teaser >
         </div>
       </section>
     </main>

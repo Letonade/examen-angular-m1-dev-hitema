@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { WeatherService } from '../weather.service';
 
+import { ImageTeaser } from '../image-teaser/image-teaser.component';
+
 @Component({
   selector: 'city-weather',
   templateUrl: './city-weather.component.html',
